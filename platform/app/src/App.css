@@ -1,0 +1,201 @@
+body {
+  overscroll-behavior: none;
+  touch-action: none;
+}
+
+:root {
+  --dental-accent: #7fdff5;
+  --dental-accent-rgb: 127, 223, 245;
+  --dental-muted: rgba(255, 255, 255, 0.65);
+  --dental-surface: rgba(12, 24, 40, 0.92);
+}
+
+body.dental-theme {
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  background-color: #050a13;
+  color: #f2faff;
+}
+
+.bg-dental-surface {
+  background-color: var(--dental-surface);
+}
+
+.text-dental-accent {
+  color: var(--dental-accent);
+}
+
+.text-dental-muted {
+  color: var(--dental-muted);
+}
+
+.border-dental-accent {
+  border-color: var(--dental-accent);
+}
+
+.dental-border-soft {
+  border-color: rgba(var(--dental-accent-rgb), 0.2);
+}
+
+.dental-border-mid {
+  border-color: rgba(var(--dental-accent-rgb), 0.35);
+}
+
+.dental-border-strong {
+  border-color: rgba(var(--dental-accent-rgb), 0.6);
+}
+
+.dental-card {
+  border: 1px solid rgba(var(--dental-accent-rgb), 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  padding: 0.75rem 1rem;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.dental-card:hover {
+  border-color: rgba(var(--dental-accent-rgb), 0.5);
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.dental-card--active {
+  border-color: var(--dental-accent);
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.dental-chip {
+  background-color: rgba(var(--dental-accent-rgb), 0.18);
+  color: var(--dental-accent);
+}
+
+.dental-button-ghost {
+  color: var(--dental-accent);
+  border-radius: 8px;
+}
+
+.dental-button-ghost:hover {
+  background-color: rgba(var(--dental-accent-rgb), 0.14);
+}
+
+.dental-pill-button {
+  border: 1px solid rgba(var(--dental-accent-rgb), 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--dental-accent);
+  border-radius: 9999px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.dental-pill-button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-color: var(--dental-accent);
+}
+
+.dental-outline-button {
+  border: 1px solid rgba(var(--dental-accent-rgb), 0.6);
+  color: var(--dental-accent);
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+}
+
+.dental-outline-button:hover {
+  background-color: rgba(var(--dental-accent-rgb), 0.1);
+}
+
+.dental-select {
+  border: 1px solid rgba(var(--dental-accent-rgb), 0.4);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0.25rem 0.5rem;
+}
+
+.dental-select:focus {
+  outline: none;
+  border-color: var(--dental-accent);
+}
+
+.dental-panel-empty {
+  border: 1px solid rgba(var(--dental-accent-rgb), 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  color: var(--dental-muted);
+}
+
+.dental-panel-item {
+  border: 1px solid rgba(var(--dental-accent-rgb), 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  padding: 0.75rem;
+}
+
+/* Dental header layout improvements */
+.dental-header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem;
+  min-height: 70px;
+}
+
+/* Ensure proper spacing and alignment */
+.dental-header-main > * {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .dental-header-main {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+/* Fix button alignment in dental theme */
+body.dental-theme .dental-button-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Improve tooth selector styling */
+.dental-tooth-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: left;
+}
+
+.dental-tooth-selector-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Ensure NavBar has proper styling in dental mode */
+body.dental-theme .bg-secondary-dark {
+  background-color: rgba(12, 24, 40, 0.95) !important;
+  border-bottom: 1px solid rgba(var(--dental-accent-rgb), 0.2);
+}
+
+/* Fix toolbar button spacing */
+.dental-toolbar-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+/* Ensure buttons are properly sized */
+body.dental-theme button {
+  white-space: nowrap;
+}
+
+/* Fix icon sizing in dental mode */
+body.dental-theme .dental-button-ghost svg {
+  width: 1rem;
+  height: 1rem;
+}

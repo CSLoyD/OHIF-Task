@@ -1,0 +1,174 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+.output/
+
+# OHIF specific build outputs
+platform/app/dist/
+platform/ui/dist/
+platform/ui-next/dist/
+platform/core/dist/
+extensions/*/dist/
+modes/*/dist/
+
+# Test coverage and results
+coverage/
+.coverage/
+*.lcov
+.nyc_output
+test-results/
+playwright-report/
+test-results.xml
+junit.xml
+
+# Test files and temporary test data
+**/__tests__/**/*.temp.*
+**/__tests__/**/*.tmp.*
+**/test-*.js
+**/test-*.ts
+**/test-*.json
+test-temp/
+test-output/
+*.test.local.*
+
+# Cache directories
+.cache/
+.parcel-cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.eslintcache
+.stylelintcache
+.prettiercache
+
+# TypeScript
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+debug.log
+error.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional npm cache directory
+.npm
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Lock files (keep package-lock.json but ignore others)
+yarn.lock
+pnpm-lock.yaml
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# OS generated files
+Desktop.ini
+$RECYCLE_BIN/
+
+# Temporary folders and files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+
+# Webpack and bundler cache
+.webpack/
+.rollup.cache/
+.vite/
+
+# Storybook build outputs
+storybook-static/
+
+# Documentation build
+docs/build/
+
+# Local development overrides
+*.local.js
+*.local.json
+*.local.yml
+*.local.yaml
+config.local.*
+secrets.json
+
+# Certificate files
+*.pem
+*.key
+*.crt
+*.cert
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Backup and archive directories
+backup/
+backups/
+archive/
+archives/
+
+# Generated files
+generated/
+auto-generated/
+
+# Docker local overrides
+docker-compose.override.yml
+Dockerfile.local
+
+# Medical imaging specific
+# DICOM test files (if any)
+*.dcm
+*.dicom
+# Large test datasets
+testdata/large/
+testdata/datasets/
+
+# Measurement exports (user generated)
+*-measurements.json
+dental-measurements-*.json
+measurements-export-*.json
