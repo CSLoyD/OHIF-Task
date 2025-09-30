@@ -33,14 +33,14 @@ export default function getPanelModule({ servicesManager }: any) {
   return [
     {
       name: 'dentalMeasurements',
-      iconName: 'tab-linear',
+      iconName: 'TabLinear',
       iconLabel: 'Measurements',
       label: 'Dental Measurements',
       component: WrappedMeasurementsPanel,
     },
     {
       name: 'dentalAnnotations',
-      iconName: 'tab-annotation',
+      iconName: 'ToolAnnotate',
       iconLabel: 'Annotations',
       label: 'Dental Annotations',
       component: WrappedAnnotationPanel,
