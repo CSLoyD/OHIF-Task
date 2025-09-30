@@ -16,6 +16,7 @@ const cornerstone = {
 
 const dental = {
   measurementsPanel: '@ohif/extension-dental.panelModule.dentalMeasurements',
+  annotationsPanel: '@ohif/extension-dental.panelModule.dentalAnnotations',
 };
 
 const extensionDependencies = {
@@ -98,7 +99,7 @@ function modeFactory() {
             props: {
               leftPanels: [ohif.thumbnailList],
               leftPanelResizable: true,
-              rightPanels: [dental.measurementsPanel],
+              rightPanels: [dental.measurementsPanel, dental.annotationsPanel],
               rightPanelResizable: true,
               rightPanelInitialExpandedWidth: 340,
               viewports: [
